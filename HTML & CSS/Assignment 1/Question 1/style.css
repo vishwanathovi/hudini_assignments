@@ -1,0 +1,21 @@
+p:first-child{
+    font-size:150%
+  }
+  a:visited{
+    color:green;
+  }
+  a{
+    color:orange;
+  }
+  p:first-child::first-line{
+    color:red;
+  }
+  th, td 
+  { 
+    padding:1px 15px 1px 1px;
+  }
+  tr:nth-child(even)
+  {
+    background-color:#333;
+    color:white;
+  }
