@@ -1,0 +1,8 @@
+.box {
+  width: 500px;
+  border: 5px dotted black; /*Added black dotted border with 5px width*/
+  margin: 20px 1em 40px 2em; /*Added margins for all the sides*/
+  padding: 1em; /*Added padding for all sides*/
+  border-radius: 20px; /*Added border radius of 20px*/
+  background-color: coral; /*Added background color*/
+}
