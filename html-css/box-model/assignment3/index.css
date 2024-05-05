@@ -1,0 +1,11 @@
+.box {
+    width: 500px;
+    padding:1em;
+    border: 5px dotted black;
+    border-radius:20px;
+    margin-top:20px;
+    margin-right:1em;
+    margin-bottom:40px;
+    margin-left:2em;
+    background: coral;
+  }
