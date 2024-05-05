@@ -7,8 +7,8 @@
 }
 
 .child {
-  box-sizing: content-box;
-  width: 82%; /*Reduced with of the child class to wrap child inside the parent element*/
+  box-sizing: border-box; /*Changed value, content-box to border-box to wrap child inside the parent */
+  width: 100%; 
   border: 10px solid rgb(91, 109, 205);
   padding: 10px;
 }
