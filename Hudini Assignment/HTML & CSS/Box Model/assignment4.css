@@ -1,0 +1,14 @@
+#element-parent {
+    transition: all .3s ease-in;
+    width: 220px;
+    height: 200px;
+    border: solid 10px #ffc129;
+    margin: .8em;
+}
+
+.child {
+  box-sizing: content-box;
+  width: 82%;
+  border: 10px solid rgb(91, 109, 205);
+  padding: 10px;
+}
