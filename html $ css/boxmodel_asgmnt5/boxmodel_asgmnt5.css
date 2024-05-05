@@ -1,0 +1,33 @@
+.preview {
+    max-width: 500px;
+    border: 1px solid #4d4e53;
+    border-radius: 2px;
+    padding: 10px 14px 10px 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+li {
+    margin: 5px;
+}
+
+.links-list a {
+  background-color: rgb(179 57 81);
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  display : inline-block;
+}
+
+.links-list a:hover {
+  background-color: rgb(66 28 40);
+  color: #fff;
+}

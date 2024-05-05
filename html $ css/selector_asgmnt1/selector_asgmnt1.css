@@ -1,0 +1,28 @@
+p:nth-child(1) {
+  
+    font-size: 150%;
+  }
+  p:nth-child(1)::first-line{
+    color:red;
+  }
+  a:link{
+    color:orange
+  }
+  a:visited{
+    color:green
+  }
+  tr:nth-child(even)
+  {
+    background-color: #333;
+    color: white;
+  }
+  table{
+    border-spacing: 0px;
+    width:20%
+  }
+  a:hover{
+    text-decoration:none;
+  }
+  th{
+    text-align:left;
+  }

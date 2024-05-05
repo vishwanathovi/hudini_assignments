@@ -1,0 +1,7 @@
+h2+p {
+    color: red;
+}
+list>li {
+  list-style:none;
+  border-bottom:1px solid grey;
+}
