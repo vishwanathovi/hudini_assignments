@@ -1,0 +1,15 @@
+.box {
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #4d4e53;
+    border-radius: 2px;
+    padding: 10px 14px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.box span {
+  background-color: pink;
+  border: 5px solid black;
+  padding: 1em;
+  display: inline-block;
+}

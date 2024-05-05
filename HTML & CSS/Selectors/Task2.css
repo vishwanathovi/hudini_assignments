@@ -1,0 +1,16 @@
+h2{
+    font-size:30px; 
+   } 
+  p{
+    color: red;
+  }
+  p:nth-child(3){
+    color: black;
+  }
+   .list li{
+      border-bottom:1px solid grey;
+    }
+  .list ul li{
+    border-bottom: none;
+  }
+  
