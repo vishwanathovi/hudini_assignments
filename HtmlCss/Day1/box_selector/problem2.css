@@ -1,0 +1,16 @@
+#element-parent {
+    transition: all .3s ease-in;
+    display: inline-flex;
+    width: 220px;
+    height: 200px;
+    border: solid 10px #ffc129;
+    margin: .8em;
+}
+
+.child {
+  box-sizing: content-box;
+  flex-basis: content;
+  width: 100%;
+  border: 10px solid rgb(91, 109, 205);
+  padding: 10px;
+}
