@@ -1,0 +1,14 @@
+.box {
+    width: 500px;
+    border: 5px dotted black;
+    border-top-style: dotted;
+    border-right-width: 5px;
+    border-bottom-color: black;
+    border-radius:20px;
+    margin-top:20px;
+    margin-right:1em;
+    margin-left:2em;
+    margin-bottom:40px;
+    padding:1em;
+    background-color:coral;
+  }
