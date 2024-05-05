@@ -1,0 +1,19 @@
+.container > p:first-of-type{
+    color: red;
+}
+
+.container > p:nth-child(5){
+    color:red;
+}
+
+.container .list > li{
+    list-style-type: none;
+}
+
+.container .list li ul li{
+    list-style-type: disc;
+}
+
+.container .list > li{
+    border-bottom: 1px solid grey;
+}
