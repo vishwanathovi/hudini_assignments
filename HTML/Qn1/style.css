@@ -1,0 +1,30 @@
+a:link {
+    color: orange;
+    /* Default link color */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+.container>p:first-child {
+    font-size: 150%;
+}
+
+.container>p:first-child::first-line {
+    color: red;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    border: 1px solid gray;
+    border-radius: 4px;
+}

@@ -1,0 +1,25 @@
+h2+p {
+    color: red;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul>li>ul>li {
+    list-style: circle;
+}
+
+ul>li {
+    border-bottom: 1px solid gray;
+}
+
+ul>li>ul>li {
+    border-bottom: none;
+}
+
+.container {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 1em;
+}
