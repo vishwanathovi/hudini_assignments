@@ -1,0 +1,22 @@
+p:nth-child(1):first-line{
+    color:red;
+  }
+  p{
+    font-size:150%;
+  }
+  a:link{
+    color:orange;
+  }
+  a:visited{
+    color:green;
+  }
+  a:hover{
+    text-decoration:none;
+  }
+  tr:nth-child(even){
+    background: #333;
+  }
+table{
+  border-spacing:0px;
+}
+  
