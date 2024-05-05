@@ -1,0 +1,12 @@
+h2 + p {
+    color:red;
+  }
+  ul.list > li::after{
+    content: "";
+    display:block;
+    border-bottom: 1px solid black;
+    margin-bottom:10px;
+  }
+  ul.list ul{
+    list-style-type:none;
+  }
