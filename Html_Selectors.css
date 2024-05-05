@@ -1,0 +1,16 @@
+.container>p:first-child:first-line{
+  color:red;
+}
+.container>p:first-child{
+  font-size:150%;
+}
+a:visited{
+  color:green;
+}
+a:hover{
+  text-decoration:none;
+}
+table tr:nth-child(even){
+  background-color:black;
+  color:white;
+}
