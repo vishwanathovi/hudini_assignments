@@ -1,12 +1,16 @@
 // 1. Calculate Average
 // Objective: Write a function that takes an array of numbers and returns the average. Use loops and basic arithmetic.
 // Function signature:
+
 function calculateAverage(numbers) {
-    // Write your code here to calculate and return the average of the array elements.
     //initialize sum as 0
-    let sum = 0;
     //use for loop to traverse through array
+    //add each element of array to sum
+    //return the average
+
+    let sum = 0;
     for (let i=0;i<numbers.length;i++){
+    
         sum += numbers[i];
     }
     //return the average
@@ -49,8 +53,11 @@ checkAge(25); // Possible output: young adult
 // Objective: Create a function that reverses a string. This will demonstrate basic string manipulation and for loops.
 // Function signature:
 function reverseString(str) {
-    // Write your code here to reverse and return the string.
     //initialising a variable to store the reverse string
+    //use for loop to traverse through characters
+    //append each character 
+    //return reversed string
+
       let strRev ="";
       for(let i=str.length-1;i>=0;i--){
         strRev +=str[i];
@@ -66,6 +73,11 @@ console.log(reverseString("hello")); // Expected output: "olleh"
 // Objective: Write a function that takes an array of numbers and returns the largest number.
 // Use loops and conditional statements to solve the problem.
 // Function signature:
+   //initialise a variable to store largest number
+   //iterate through array elements
+   //checking if current element is greater than or qual to largest number
+   //return the largest number
+
 function findLargestNumber(numbers) {
  let num=0;
    for(i=0;i<=numbers.length;i++){
@@ -83,8 +95,15 @@ console.log(findLargestNumber([10, 20, 30, 40, 50])); // Expected output: 50
 // Create an object that acts as a counter with methods to add, subtract, and reset the count.
 // Demonstrate object methods and the use of this.
 // Object definition:
+    //define an object name counter
+    //initialize property value as o
+    //define a method 'add' to increment and increment
+    //define a method 'subtract' to decrement and decrement
+    //define a method 'reset to reset  and reset the value to 0
+    //define a method 'display' to return current value
+
 const counter = {
-    value :0,
+        value :0,
     add:function(){
         this.value++;
     },
