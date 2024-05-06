@@ -1,0 +1,95 @@
+.body-parent{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+
+}
+body {
+  font-family: Arial, sans-serif;
+
+}
+main{
+display:flex;
+justify-content:space-between;
+background-color:#ccc;
+align-items:stretch;
+}
+header, nav, aside, section, footer {
+  padding: 20px;
+  margin: 0px;
+}
+section{
+flex-grow:5;
+
+}
+aside{
+  background-color: #fff;
+
+}
+aside, section {
+padding-left:5px;
+padding-right:5px;
+text-align:justify;
+}
+
+header{
+    background-color: #2C303A;
+  border-bottom: 2px solid #000;
+  text-align: center;
+
+}
+
+h1, h2 {
+  color: #;
+}
+header h1{
+color:#CCC;
+} 
+main p, aside p {
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  display:flex;
+justify-content:space-between;
+align-items:center;
+ color:#000;
+ background-color: #000;
+  height: 20px;
+}
+
+nav a {
+flex-grow:0.1;
+  color: #000;
+text-align:center;
+ background-color:#ccc;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #fff;
+}
+.header h2{
+position:absolute;
+order:1;
+align-self:center;
+}
+
+footer {
+border-top: 6px solid black;
+}
+footer h2{
+display:none;
+}
+header p{
+display:none;
+}
+footer{
+   background-color:#ccc;
+}
+@media screen and (max-width: 700px) {
+
+}
