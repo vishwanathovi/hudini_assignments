@@ -1,0 +1,28 @@
+.icon-with-badge {
+    display: inline;
+    position:absolute;
+    /* What should be the display property that allows the container to fit the size of the icon? */
+  }
+  
+  .icon {
+      display:inline;
+      font-size: 48px;
+      /* What should be the display property that allows the container to fit the size of the icon? */
+  }
+  
+  .badge {
+    position:absolute;
+    border-radius: 50%;
+      /*What should be the position property to have the badge on the top-right corner of the bell?*/
+      top: 0;
+      right: 0;
+      background-color: red;
+      color: white;
+      padding: 0 5px;
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      min-width: 20px;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
