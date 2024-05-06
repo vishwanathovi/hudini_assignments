@@ -1,0 +1,26 @@
+.icon-with-badge {
+    position:relative;
+     /*outline:solid 1px red;*/
+     display:inline-block;
+   }
+   
+   .icon {
+       font-size: 48px;
+       /* What should be the display property that allows the container to fit the size of the icon? */
+   }
+   
+   .badge {
+       position:absolute;
+       top: 0;
+       right: 0;
+       background-color: red;
+       color: white;
+       padding: 0 5px;
+       font-size: 12px;
+       height: 20px;
+       line-height: 20px;
+       min-width: 20px;
+     border-radius:50%;
+       text-align: center;
+       box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+   }

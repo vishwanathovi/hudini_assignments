@@ -1,0 +1,12 @@
+h2 + p {
+    color: red;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul > li {
+    border-bottom: 1px solid grey;
+  }
+  

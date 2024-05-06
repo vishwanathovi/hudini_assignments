@@ -1,0 +1,31 @@
+.preview {
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #4d4e53;
+    border-radius: 2px;
+    padding: 10px 14px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 550px;
+    height: 200px;
+    padding: 0.5em;
+    border: 5px solid #ccc;
+    overflow: auto;
+}
+
+.sidebar {
+    position:sticky;
+  top:0;
+    left:0;
+    background-color: rgb(207 232 220);
+    padding: 1em;
+    float: left;
+    width: 150px;
+}
+
+.content {
+    padding: 1em;
+    margin-left: 160px;
+}
