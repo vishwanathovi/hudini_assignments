@@ -9,6 +9,5 @@
 }
 
 .alternate {
-  box-sizing: border-box;
-  width: 26%; /*Added width property to match the visual width of the first box.*/
+  box-sizing: content-box; /*Changed box-sizing property to content-box to match the visual width of the first box.*/
 }
