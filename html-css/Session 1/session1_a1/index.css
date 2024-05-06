@@ -1,0 +1,27 @@
+a:visited{
+  color: green;
+}
+a:link{
+  color: orange;
+}
+a:hover{
+  text-decoration: none;
+}
+.container p:first-of-type{
+  font-size:150%;
+  color: red;
+}
+
+table {
+  width: 150px;
+
+}
+th {
+  background: #fff;
+  color: black;
+  text-align: left;
+}
+tr:nth-child(even) td {
+  background: black;
+  color: #fff;
+}
