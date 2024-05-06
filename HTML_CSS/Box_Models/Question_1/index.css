@@ -9,6 +9,7 @@
   }
   
   .alternate {
-    box-sizing: border-box;
-    width: 390px; /* Adjusted width */
+/*     box-sizing: border-box; */
+       box-sizing: content-box; /*changed border-box to content-box */
+    
   }
