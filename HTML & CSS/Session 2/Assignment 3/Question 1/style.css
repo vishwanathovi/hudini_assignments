@@ -1,0 +1,24 @@
+.gallery {
+    display: grid;
+  grid-template-columns: 180px 180px 180px 180px ;
+  gap:10px;
+/*   justify-content:space-between; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding:5px
+    
+    
+}
+
+
+img.four-grid-cells {
+
+}
+
+img.wide-image {
+
+}
