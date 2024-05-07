@@ -1,0 +1,12 @@
+.container a:visited{
+    color:green;
+  }
+  .container p:nth-of-type(1){
+    font: 20px Arial;
+    color:red;
+  }
+  tr:nth-child(even){
+    background-color:black;
+    color:white;
+  }
+  
