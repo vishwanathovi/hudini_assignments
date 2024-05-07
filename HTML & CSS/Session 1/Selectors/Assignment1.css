@@ -1,0 +1,21 @@
+p:first-child::first-line {
+    color: red;
+    font-size:25px;
+      
+  }
+  div a{
+    color: orange;
+  }
+  a:hover{
+    color: green;
+  }
+  p:second-child:: first-line{
+    font-size: 10px;
+  }
+  tr:nth-child(even){
+     background-color: black;
+    color:white
+  }
+  
+  
+  
