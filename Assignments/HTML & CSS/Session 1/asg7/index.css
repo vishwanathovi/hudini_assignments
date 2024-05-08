@@ -21,6 +21,7 @@ li {
 }
 
 .links-list a {
+  display:inline-block
   background-color: rgb(179 57 81);
   color: #fff;
   text-decoration: none;
