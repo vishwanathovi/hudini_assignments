@@ -93,17 +93,11 @@ footer {
 /*   display:flex; */
   flex-wrap: wrap;
 }
-header{
-  
-}
 main{
   display:flex;
 }
 section{
   background-color:#B6B2B2;
-}
-aside{
-  
 }
 footer a{
   color:blue
