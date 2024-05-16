@@ -1,0 +1,149 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 18pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: "Manrope", "Inter", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* prettier-ignore */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* prettier-ignore */
+input, button, textarea, select {
+  font: inherit;
+}
+/* prettier-ignore */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* prettier-ignore */
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --text-color-1: rgba(0, 0, 0, 0.529);
+  --text-color-2: #000;
+  --background-color1: #fafaf0;
+  --background-color2: #f5f4e4;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --hover-color: #9daba9;
+}
+
+code {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+
+
+
+
+
+
+body{
+  background: var(--background-color1);
+}
+
+.para1{
+  margin: 10px auto 10px 0px;
+}
+
+span{
+  font-style: italic;
+  font-weight: bold;
+}
+
+.btn{
+  margin: 20px 0 0 0;
+  border-radius: 50px;
+  letter-spacing: 5px;
+  font-size: small;
+  padding: 10px 20px;
+  border: 2px solid var(--text-color-1) ;
+  width: 170px;
+}
+
+.headfoot{
+  margin: 50px;
+  padding: 50px;
+}
+
+h1{
+  font-weight: 100;
+  font-size: xx-large;
+}
+
+.card1{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card2{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+  img{
+    object-fit: cover;
+  }
+ 
+.section2{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section1{
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.content{
+  position: relative;
+  top: 80px;
+  padding: 20px;
+  margin: 30px;
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 736px) {
+  html {
+    font-size: 11pt;
+  }
+}
+
+@media (max-width: 480px) {
+}
