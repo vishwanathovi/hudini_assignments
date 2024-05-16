@@ -1,0 +1,294 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 18pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --text-color-1: rgba(0, 0, 0, 0.529);
+  --text-color-2: #000;
+  --background-color1: #fafaf0;
+  --background-color2: #f5f4e4;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --hover-color: #9daba9;
+}
+
+code {
+  font-family: 'Lucida Console', 'Courier New', monospace;
+}
+
+body {
+  color: var(--text-color-1);
+  font-family: 'Manrope', sans-serif;
+  background: var(--background-color1);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+  padding: 0 8rem;
+}
+
+.text1 {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.text1 span {
+  font-weight: bold;
+  font-style: italic;
+  color: var(--text-color-2);
+  margin-right: 5px;
+}
+
+.text2 {
+  margin-bottom: 0.5rem;
+}
+
+.text3 {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.button {
+  border-radius: 2rem;
+  padding: 0.3rem 1rem;
+  font-size: 0.7rem;
+  border-color: var(--border-color);
+  cursor: pointer;
+  background: none;
+  max-width: fit-content;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: var(--hover-color);
+}
+
+.fa-long-arrow-right {
+  margin-left: 1rem;
+  color: var(--border-color);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.container-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card-content-40 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  background: var(--background-color2);
+  padding: 0 3rem;
+}
+
+.card-content-60 {
+  width: 60%;
+  background: var(--background-color2);
+}
+
+.img1 {
+  width: 100%;
+  max-height: 20rem;
+}
+
+.card-content-50 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 5rem 0;
+}
+
+.card-l {
+  padding-left: 8rem;
+  padding-right: 3rem;
+}
+
+.card-r {
+  padding-left: 3rem;
+  padding-right: 8rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8rem;
+  height: 20rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+input.email {
+  width: 30rem;
+  border-radius: 2rem;
+  border-color: var(--border-color);
+  padding: 0.2rem 1rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  background: none;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  background: var(--hover-color);
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 13pt;
+  }
+
+  .header {
+    padding: 0 8rem;
+  }
+
+  .container {
+    height: 20rem;
+  }
+
+  .card-content-40 {
+    padding: 0 3rem;
+  }
+
+  .card-content-50 {
+    padding: 5rem 0;
+  }
+  .card-l {
+    padding-left: 8rem;
+    padding-right: 3rem;
+  }
+  .card-r {
+    padding-left: 3rem;
+    padding-right: 8rem;
+  }
+}
+
+@media (max-width: 736px) {
+  html {
+    font-size: 11pt;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+
+  .card-content-40 {
+    width: 100%;
+    padding: 5rem 2rem;
+  }
+
+  .card-content-60 {
+    width: 100%;
+  }
+
+  .card-content-50 {
+    width: 100%;
+    padding: 5rem 2rem;
+  }
+
+  .card-l {
+    padding-top: 0;
+  }
+
+  .footer {
+    padding: 0 2rem;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input.email {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 11pt;
+  }
+}
