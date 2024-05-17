@@ -1,0 +1,215 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html {
+    font-size: 18pt;
+    /* import below fonts from https://fonts.google.com/ */
+    font-family: "Manrope", "Inter", sans-serif;
+  }
+  body {
+    background-color: var( --background-color1);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* prettier-ignore */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* prettier-ignore */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* prettier-ignore */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* prettier-ignore */
+  #root, #__next {
+    isolation: isolate;
+  }
+  :root {
+    --text-color-1: rgba(0, 0, 0, 0.529);
+    --text-color-2: #000;
+    --background-color1: #fafaf0;
+    --background-color2: #f5f4e4;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --hover-color: #9daba9;
+  }
+   
+  code {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+   
+button{
+    width: 130px;
+    border-radius: 20px;
+    background:#fafaf0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    letter-spacing: 3px;
+    font-weight: 15;
+    font-size: 13px;
+    padding:5px;
+    margin:10px;
+    color: dimgray;
+}
+button:hover{
+  background-color: #9daba9;
+}
+
+h1{
+    font-weight: lighter;
+    font-size: 60px;
+    color:dimgray;
+}
+p{
+    font-size: 13px;
+    color: dimgray;
+}
+input{
+    width:300px;
+    border-radius:15px;
+    font-size: 15px;
+    margin:10px;
+}
+header,footer{
+    background-color: #fafaf0;
+    padding-left:170px;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+.cont-image{
+    background-color: #fafaf0;
+}
+
+.content12 h2{
+    font-size: 50px;
+    font-weight: 15;
+    color:dimgray;
+}
+
+.content1 h2{
+  font-size: 50px;
+    font-weight: 15;
+    color:dimgray;
+}
+
+.content12{
+    display:inline-block;
+    vertical-align: top;
+    padding-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width:49.5%;
+}
+.content1{
+    display:inline-block;
+    padding-left: 40px;
+    vertical-align: top;
+}
+section{
+    margin-bottom:30px;   
+}
+
+.cont-image{
+    background-color: #f5f4e4;
+}
+
+
+
+.image-cont{
+    display:inline-block;
+    width:40%;
+    margin-top: 30px;
+    padding-top: 50px;
+}
+.image{
+    display: inline-block;
+    width:59.4%;
+    object-fit: cover;
+}
+
+img{
+    object-fit: cover;
+    width:100%;
+    height:410px;
+    display: inline-block;
+}
+
+h2,h6,p{
+    padding:10px;
+}
+
+input::placeholder{
+  letter-spacing: 3px;
+  padding:5px;
+}
+input{
+  border:2px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:736px){
+.content1{
+  position: relative;
+  top:0;
+  display:block;
+  margin:auto;
+  width:75%;
+}
+.content12{
+  position: relative;
+  top:0;
+  display:block;
+  margin:auto;
+  padding-top:auto;
+  padding-bottom:auto;
+  padding-right:35px;
+  padding-left:51px;
+  width:75%;
+}
+.image{
+  display:block;
+  width:100%;
+}
+.image-cont{
+  padding:60px;
+}
+header,footer{
+  display:block;
+  margin:auto;
+  padding-left:80px;
+  padding-right:80px;
+}
+}
+
+@media (max-width:480px){
+  body{
+    width:100%;
+  }
+  header,footer{
+    display:block;
+    margin:auto;
+    padding-top:80px;
+    padding-right:130px;  
+    width:100%;
+
+  }
+  .content1,.content12{
+    display:block;
+    padding:auto;
+    margin:auto;
+    width:100%;
+  }
+  .image{
+    display:block;
+    width:100%;
+  }
+}
