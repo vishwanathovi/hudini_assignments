@@ -1,0 +1,15 @@
+p:first-child::first-line{
+    color:red;
+    font-size:150%;
+  }
+  div a{
+    color:orange;
+  }
+  a:visited{
+    color:green;
+    text-decoration:none;
+  }
+   tr:nth-child(even){
+    background-color:black;
+     color:white;
+  }
