@@ -1,0 +1,380 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 18pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: "Inter", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--text-color-1);
+  font-size: 16px;
+  overflow-x:hidden;
+}
+/* prettier-ignore */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* prettier-ignore */
+input, button, textarea, select {
+  font: inherit;
+}
+/* prettier-ignore */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* prettier-ignore */
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --text-color-1: #fff;
+  --text-color-2: #00ffc2;
+  --background-color1: #fafaf0;
+  --background-color2: #f5f4e4;
+  --border-color: rgba(0, 0, 0, 0.9);
+  --hover-color: #9daba9;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: scale(1);
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  /* use correct CSS property to have "background.svg" file under assets folder set as background image here */
+  background: url(../assets/background.svg);
+  z-index: -1;
+  background-attachment: scroll;
+}
+
+code {
+  font-family: "Courier New", monospace;
+}
+
+h6 {
+  color: var(--text-color-2);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 3%;
+  font-weight: 600;
+}
+
+/* button */
+
+.button {
+  background: none;
+  color: var(--text-color-1);
+  border: 2px solid var(--text-color-2);
+  border-radius: 25px;
+  padding: 0.7em 1.5em;
+  font-weight: 600;
+  margin: 5%;
+  margin-bottom: 50px;
+  transition-duration: 0.3s;
+}
+
+.buttonarrow {
+  display: inline-block;
+  color: var(--text-color-2);
+}
+
+.button:hover {
+  background-color: rgba(255,255,255,0.09);
+  border-color: #fff;
+}
+
+.button:active{
+  scale: 1.1;
+}
+
+/* cards */
+
+.card {
+  padding: 10%;
+}
+
+.card h3 {
+  margin: 5% 0;
+}
+
+/* images */
+
+.image {
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid var(--text-color-2);
+  margin: 10%;
+}
+
+/* header */
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 650px;
+  border-color: rgba(255,255,255,0.09);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1.5rem;
+}
+
+.header h1 {
+  
+  margin-left: 0;
+}
+
+.header .button {
+  
+  margin-left: 0;
+}
+
+.headertextcard {
+  grid-column: 1 / 4;
+}
+
+.headerimage {
+  grid-column: 4 / 6;
+  height: 80%;
+  width: 65%;
+}
+
+/* sections */
+
+.sectionheader {
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 5% 0;
+}
+
+/* section 1 */
+
+.section1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  border-color: rgba(255,255,255,0.09);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1.5rem;
+}
+
+.section1card {
+  justify-items: center;
+  text-align: center;
+  justify-content: center;;
+  padding: 5% 15%;
+}
+
+.smallimage {
+  width: 100%;
+  height: 300px;
+  margin-left: 3%;
+}
+
+.section1 .button {
+  grid-column: 2 / span 1;
+}
+
+/* section 2 */
+
+.section2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-color: rgba(255,255,255,0.09);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1.5rem;
+}
+
+.section2 .sectionheader{
+  grid-column: 1 / -1;
+}
+
+.section2 .image {
+  grid-column: 1 / 3;
+}
+
+.section2 .sec2cards {
+  grid-column: 3 / 6;
+  padding: 0 5%;
+  align-items: center;
+  align-content: center;
+}
+
+
+.section2 .button {
+  grid-column: 3 / span 1;
+}
+
+/* section 3 */
+
+.section3 {
+  border-color: rgba(255,255,255,0.09);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 1.5rem;
+}
+
+.section3div {
+  display: flex;
+  padding: 0 15%;
+  
+}
+
+.section3card {
+  justify-content: center;
+  text-align: center;
+  border-color: rgba(255,255,255,0.09);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1.5rem;
+}
+
+.section3footer {
+  padding: 0 15%;
+  justify-content: center;
+  text-align: center;
+}
+
+.section3footer h3{
+  margin: 50px 0;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  height: 150px;
+}
+
+.footericons{
+  display: flex;
+  width: min-content;
+  padding: 5%;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 736px) {
+  html {
+    font-size: 11pt;
+  }
+
+  /* header */
+  .header {
+    display: block;
+    height: 850px;
+    text-align: center;
+  }
+  .headerimage {
+    height: 350px;
+    margin: 0 5%;
+    width: 90%;
+  }
+.headertextcard {
+  margin: 0;
+  padding-bottom: 0;
+}
+  .headertextcard h1{
+    font-size: 34px;
+  }
+  .header .button{
+    margin: 0;
+    margin: 50px;
+  }
+
+  /* section 1 */
+  .section1 {
+    display: block;
+    height: 1800px;
+    text-align: center;
+  }
+  .section1card {
+    padding: 3% 8%;
+  }
+  .smallimage {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+  }
+
+  /* section 2 */
+  .section2 {
+    display: block;
+    height: 1600px;
+    text-align: center;
+  }
+  .section2 .image {
+      width: 90%;
+      height: 300px;
+      margin: 0;
+      margin-left: 5%;
+  }
+  .section2card {
+    border-color: rgba(255,255,255,0.09);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1.5rem;
+  }
+
+  /* section 3 */
+  .section3div {
+    display: block;
+    margin: 0;
+    margin-left: 2%;
+  }
+
+  .section3card .button {
+    margin-top: 70px;
+  }
+
+  .section3footer .button {
+    margin-top: 50px;
+  }
+
+  /* footer */
+  .footer {
+    display: block;
+    text-align: center;
+    margin-bottom: 8%;
+  }
+}

@@ -1,0 +1,438 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 11pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-color-2);
+  /* background-image: url('../assets/background.svg'), linear-gradient(360deg, #C88979 0%, #C48372 100%); */
+  /* background-attachment: fixed; */
+  /* background-color: rgb(201, 201, 201); */
+  background-color: rgb(218, 218, 218);
+  font-weight: 300;
+}
+
+/* prettier-ignore */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* prettier-ignore */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* prettier-ignore */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* prettier-ignore */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --text-color-1: #0a0a0a;
+  --text-color-2: #969696;
+  --text-color-3: #b0b0b0;
+  --background-color1: #c88979;
+  --background-color2: #e2e7ea;
+  --background-color3: #fff;
+  --hover-color: #9e9e9e;
+}
+
+/* 
+  For card background svg use background-image property to place the url and below linear-gradient values
+  linear-gradient(360deg, #C88979 0%, #C48372 100%)
+*/
+
+/* icons */
+
+.iconsdiv {
+  display: flex;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  fill: var(--background-color1);
+}
+
+/* button and email padding */
+
+.button,
+.email {
+  padding: 0.7em 1.3em;
+}
+
+/* button */
+
+.button {
+  color: var(--background-color3);
+  background-color: var(--background-color1);
+  border: none;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+  margin: 10% 0;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+  border-color: #fff;
+}
+
+.button:active {
+  scale: 1.1;
+}
+
+/* form */
+
+.signupform {
+  display: flex;
+  gap: 5%;
+  margin: 7% 0;
+}
+
+.email {
+  border: 2px solid var(--background-color2);
+  color: var(--text-color-3);
+  border-radius: 40px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.signup-button {
+  font-weight: 500;
+}
+
+/* footertext */
+
+.footertext {
+  font-size: 8pt;
+  color: var(--text-color-3);
+}
+
+/* textcard */
+
+.textcard {
+  padding: 8% 10%;
+  width: 50%;
+}
+
+.textcard h1 {
+  color: var(--text-color-1);
+  font-weight: 400;
+  font-size: 18pt;
+  margin: 5% 0;
+}
+
+.imgtextcard {
+  width: 65%;
+}
+
+/* image */
+
+img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.header img {
+  border-top-right-radius: 15px;
+}
+
+.imagediv {
+  width: 36%;
+}
+
+/* maindiv */
+
+.maindiv {
+  margin: 4% 25% 0 25%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--background-color3);
+}
+
+/* imagesection */
+
+.imagesection {
+  display: flex;
+}
+
+/* textsection */
+
+.textsection {
+  display: flex;
+  background-color: rgb(241, 241, 241);
+}
+
+.textsection .textcard1 {
+  padding-right: 4%;
+}
+
+.textsection .textcard2 {
+  padding-left: 4%;
+}
+
+.dots {
+  color: var(--background-color1);
+  font-size: 20pt;
+  width: 14%;
+  overflow-x: hidden;
+}
+
+/* header */
+
+.header .textcard h1 {
+  font-size: 24pt;
+  font-weight: 400;
+}
+
+.header .button {
+  margin: 0;
+}
+
+/* section1 */
+.section1 .textcard {
+  padding-bottom: 12%;
+}
+
+/* section3 & section 5*/
+
+.section3 .textcard,
+.section5 .textcard {
+  width: 100%;
+  padding-bottom: 6%;
+}
+
+.section3 .dots,
+.section5 .dots {
+  width: 7%;
+}
+
+.section3 .button,
+.section5 .button {
+  margin-top: 5%;
+}
+
+/* section 4 */
+
+.section4 .textcard {
+  background-image: url(../assets/background.svg), linear-gradient(360deg, #C88979 0%, #C48372 100%);
+  color: rgb(235, 235, 235);
+}
+
+.section4 h1 {
+  color: var(--background-color3);
+  margin-bottom: 5%;
+}
+
+.section4 .button {
+  color: var(--background-color1);
+  background-color: var(--background-color3);
+}
+
+/* section 5 */
+
+.section5 .signupform {
+  align-items: center;
+  width: 85%;
+}
+
+.section5 .button {
+  margin: 0;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.footer .icon {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 736px) {
+
+  /* html */
+
+  html {
+    font-size: 12pt;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* maindiv */
+
+  .maindiv {
+    margin: 4% 4% 0 4%;
+  }
+
+  /* textsection & imagesection flex direction*/
+
+  .textsection,
+  .imagesection,
+  .signupform {
+    flex-direction: column;
+  }
+
+  /* textsection */
+
+  .dots {
+    font-weight: 600;
+    width: 80%;
+  }
+
+  .section3 .dots,
+  .section5 .dots {
+    width: 80%;
+  }
+
+  /* imagesection */
+
+  .imagesection .textcard {
+    padding-top: 3%;
+  }
+
+  /* textcard, image, email, imagediv width */
+
+  .textcard,
+  .imagediv,
+  img {
+    width: 100%;
+  }
+
+  .imagediv {
+    height: 425px;
+    order: -1;
+  }
+
+
+  /* textcard */
+
+  .textcard {
+    padding: 5% 10% 0 10%;
+  }
+
+  .textcard h1 {
+    font-size: 21pt;
+  }
+
+  /* form */
+
+  .signup-button {
+    width: 100px;
+  }
+
+  .email {
+    margin-bottom: 5%;
+  }
+
+  /* header */
+
+  .header {
+    padding-bottom: 8%;
+  }
+
+  .header .textcard h1 {
+    font-size: 29pt;
+  }
+
+  .header img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  /* section1 */
+
+
+  .textsection .textcard1 {
+    padding-right: 10%;
+    padding-bottom: 0;
+  }
+  
+  .textsection .textcard2 {
+    padding-left: 10%;
+    padding-bottom: 8%;
+  }
+
+  /* section3 */
+
+  .section3 .textcard{
+    padding-bottom: 0;
+  }
+  
+  /* section5 */
+
+  .section5 .signupform {
+    align-items: start;
+    width: 100%;
+  }
+
+  .section5 .textcard {
+    padding-bottom: 3%;
+  }
+
+  /* footer */
+
+  .footer .icon {
+      width: 30px;
+      height: 30px;
+  }
+
+  /* footertext */
+
+  .footertext {
+    font-size: 11pt;
+  }
+
+}
