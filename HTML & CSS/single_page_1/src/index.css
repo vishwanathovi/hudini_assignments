@@ -1,0 +1,306 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html {
+  font-size: 18pt;
+  /* import below fonts from https://fonts.google.com/ */
+  font-family: "Manrope", "Inter", sans-serif;
+}
+body {
+  line-height: 2;
+  -webkit-font-smoothing: antialiased;
+}
+/* prettier-ignore */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* prettier-ignore */
+input, button, textarea, select {
+  font: inherit;
+}
+/* prettier-ignore */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* prettier-ignore */
+#root, #__next {
+  isolation: isolate;
+}
+:root {
+  --text-color-1: rgba(0, 0, 0, 0.529);
+  --text-color-2: #000;
+  --background-color1: #fafaf0;
+  --background-color2: #f5f4e4;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --hover-color: #9daba9;
+}
+
+
+
+code {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 736px) {
+  html {
+    font-size: 11pt;
+  }
+  header{
+    font-size: 13pt;
+    padding: 20px 30px;
+    
+  /* }
+  .container{
+    margin:0 auto;
+  }
+
+ h2{
+   font-size: 50px;
+ }
+  /* .main{ */
+    /* display: block; */
+  } */
+
+ .content1{
+    position: relative;
+    display:block;
+    width:50%;
+    top: 0;
+    margin: auto;
+    padding: auto;
+  }
+ .content2{
+  display:block;
+  width:50%;
+  }
+   /* img{
+     height: 200px;;
+     width: 100%;
+     display: block;
+     object-fit: fill;
+   } */
+ 
+}
+
+@media (max-width: 480px) {
+}
+
+
+body{
+  color: rgba(0, 0, 0, 0.529);
+
+}
+
+header{
+   background:#f5f4e4;
+}
+
+p{
+  font-size: 15px;
+  /* padding: 5px; */
+  
+}
+
+/* h2{
+  padding: 10px 0 ;
+} */
+
+.container{
+  margin: 0 auto;
+  width: 70%;
+  padding: 100px 0 50px 50px;
+}
+
+.btn{
+  color: black;
+  margin:10px 0;
+  border:1px solid lightgray;
+  border-radius: 30px;
+  font-size: 50%;
+  padding: 10px 20px 10px 20px;
+  background-color: transparent;
+}
+
+.btn:hover{
+  background-color:  #9daba9;
+}
+
+.main{
+  background-color: #fafaf0;
+  
+}
+
+.content1{
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  /* padding:100px; */
+  padding:100px 50px 0 100px;
+
+ }
+
+ .content2{
+  vertical-align: top;
+  display: inline-block;
+  width: 64%;
+  /* object-fit: cover; */
+ }
+
+
+.main1{
+  background:#f5f4e4;
+  width:100%;
+  align-items: center;
+
+}
+
+.content3{
+  display: inline-block;
+  width: 50%;
+  vertical-align:top;
+  padding: 100px;
+}
+
+.content4{
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding:100px;
+}
+
+.main2{
+  background-color: #fafaf0;
+ 
+  
+}
+
+.content5{
+  display: inline-block;
+  vertical-align:top;
+  width:64%;
+}
+
+
+.content6{
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  padding:100px 0 0 50px;
+
+ }
+
+
+
+img{
+  height: 509px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main3{
+  background:#f5f4e4;
+  width:100%;
+  align-items: center;
+  
+}
+
+.content7{
+  display: inline-block;
+  width: 50%;
+  vertical-align:top;
+  padding: 100px;
+}
+
+.content8{
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding:100px;
+}
+
+.main4{
+  background-color: #fafaf0;
+  
+}
+
+ .content9{
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  padding:100px;
+  
+ }
+
+ .content10{
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+ }
+
+
+footer{
+    background-color:#f5f4e4;
+}
+
+#email{
+  color: black;
+  margin-top: 40px ;
+  border:1px solid lightgray;
+  border-radius: 20px;
+  font-size: 50%;
+  padding: 10px 20px 10px 20px;
+  background-color: transparent;
+  width:500px;
+}
+
+.icons{
+  padding:20px 0;
+  display: block;
+}
+
+.fa-twitter{
+  border:  1px solid gray;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin: 0px 6px;  
+}
+
+.fa-facebook{
+  border:  1px solid gray;
+  padding:  10px 15px 10px 15px  ;
+  border-radius: 50px;
+  font-size: 20px;
+  margin: 0px 6px;
+}
+
+.fa-linkedin{
+  border:  1px solid gray;
+  padding: 10px 15px 10px 15px ;
+  border-radius: 50px;
+  font-size: 20px;
+  margin: 0px 6px;
+}
+.fa-envelope{
+  border:  1px solid gray;
+  padding: 10px  ;
+  border-radius: 50px;
+  font-size: 20px;
+  margin: 0px 6px;
+}
+
