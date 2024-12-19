@@ -1,0 +1,24 @@
+
+h2 + p {
+    color: red;
+}
+
+
+ul, ol {
+    list-style: none;
+    
+}
+
+ul > li {
+    border-bottom: 1px solid grey;
+}
+/* selects all list items that are direct children of unordered lists, except for the last child*/
+ul > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+p {
+    
+    margin-bottom: 10px; 
+}

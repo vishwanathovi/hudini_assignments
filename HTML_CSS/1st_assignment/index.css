@@ -1,0 +1,23 @@
+.container a{
+    color:orange
+  }
+  
+  .container a:visited{
+    color:green
+  }
+   a:hover{
+    text-decoration:none
+  }
+  :first-child p:first-child {
+    color:red;
+    font-size:150%;
+    
+  }
+  
+  table tr:nth-child(odd){
+    background-color:#ffffff;
+  }
+  table tr:nth-child(even){
+    background-color:#000000;
+    color:white;
+  }
