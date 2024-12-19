@@ -1,0 +1,13 @@
+.box {
+    width: 500px;
+    border: 5px dotted black;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    background-color: coral;
+  
+  
+  }

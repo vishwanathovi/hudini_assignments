@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+header, nav, main, aside, section, footer {
+    padding: 20px;
+    margin: 10px;
+}
+
+aside, section {
+  border: 1px solid;
+}
+
+header {
+    background-color: #ccc;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+ 
+h1, h2 {
+    color: #000;
+}
+ 
+main p, aside p {
+    color: #333;
+    line-height: 1.6;
+}
+ 
+nav {
+    background-color: #000;
+    height: 70px;
+}
+ 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+ 
+nav a:hover {
+    background-color: #555;
+}
+
+footer {
+  border-top: 2px solid black;
+}
+
+@media screen and (max-width: 700px) {
+
+}
+section{
+  order:1;
+ 
+}
+aside{
+  order:2;
+}
+nav{
+  order:3;
+}
+footer{
+  order:4;
+}
+.body-parent{
+display: flex;
+  flex-direction:column;
+}
