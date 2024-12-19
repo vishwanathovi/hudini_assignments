@@ -1,0 +1,13 @@
+h2+p{
+  color:red;
+}
+li{
+  list-style:none;
+}
+.list li{
+  border-bottom:1px solid grey;
+}
+.list ul li{
+  border-bottom:none;
+  list-style-type:circle;
+}
