@@ -1,0 +1,56 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html {
+    font-size: 18pt;
+    /* import below fonts from https://fonts.google.com/ */
+    font-family: "Manrope", "Inter", sans-serif;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* prettier-ignore */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* prettier-ignore */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* prettier-ignore */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* prettier-ignore */
+  #root, #__next {
+    isolation: isolate;
+  }
+  :root {
+    --text-color-1: rgba(0, 0, 0, 0.529);
+    --text-color-2: #000;
+    --background-color1: #fafaf0;
+    --background-color2: #f5f4e4;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --hover-color: #9daba9;
+  }
+ 
+  code {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+
+  .card-1{
+    color: var(--text-color-1);
+    margin-bottom: 10px;
+  }

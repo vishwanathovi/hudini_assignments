@@ -1,0 +1,26 @@
+.container >p>a{
+    color:orange;
+  }
+  .container >p>a:hover {
+     text-decoration: none;
+  }
+  .container >p>a:visited {
+     color:green;
+  }
+  .container >p:first-child{
+    font-size:150%;
+  }
+  .container >p:first-child:first-line{
+    color:red;
+  }
+  tr:nth-child(even){
+    background:#333;
+    color:white;
+  }
+  table {
+  border-spacing: 0;
+  width: 20%;
+  }
+  th{
+    text-align:left;
+  }

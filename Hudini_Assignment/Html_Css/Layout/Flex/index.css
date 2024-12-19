@@ -1,0 +1,282 @@
+/*
+Josh's Custom CSS Reset
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+/* prettier-ignore */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html {
+    font-size: 18pt;
+    /* import below fonts from https://fonts.google.com/ */
+    font-family: "Manrope", "Inter", sans-serif;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* prettier-ignore */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* prettier-ignore */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* prettier-ignore */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* prettier-ignore */
+  #root, #__next {
+    isolation: isolate;
+  }
+  :root {
+    --text-color-1: rgba(0, 0, 0, 0.529);
+    --text-color-2: #000;
+    --background-color1: #fafaf0;
+    --background-color2: #f5f4e4;
+    --border-color: rgba(0, 0, 0, 0.2);
+    --hover-color: #9daba9;
+  }
+ 
+  code {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+ 
+  @media (max-width: 1280px) {
+    html {
+      font-size: 13pt;
+    }
+  }
+ 
+img{
+    width: 100%;
+    height: 600px;
+  }
+ 
+.heading{
+    font-weight: 400;
+    color: var(--text-color-1);
+    margin-bottom: 10px;
+}
+ 
+  span{
+    color: #000;
+    font-style: italic;
+  }
+ 
+  .p1{
+    color: var(--text-color-1);
+    margin-bottom: 10px;
+ 
+  }
+ 
+  .p2{
+    color: var(--text-color-1);
+    font-weight: 500;
+    font-size: medium;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+ 
+  button{
+    border-radius: 60px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border: 2px solid var(--border-color);
+    margin: 2% 0%;
+  }
+
+  button:hover {
+    background-color: var(--hover-color);
+  }
+ 
+.fa-brands, .fa-envelope {
+    border: solid var(--border-color);
+    color: var(--text-color-1);
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 20px;
+    margin: 0px 6px;  
+}
+ 
+ 
+header{
+    padding: 4rem;
+    width: 100%;
+    background-color: var(--background-color1);
+}
+ 
+ 
+.section-one{
+    display: flex;
+
+}  
+ 
+.container-1{
+    background-color: var(--background-color2);
+    flex: 1;
+    padding: 4rem;
+}
+ 
+.image-one{
+    flex: 2;
+    height: auto;
+}
+  
+aside{
+    display: flex;
+    padding: 4rem;
+}
+ 
+.content-1{
+    flex: 1;
+}
+ 
+ 
+.section-two{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.image-two{
+    flex: 2;
+}
+ 
+ 
+.container-4{
+    padding:6rem;
+}
+ 
+input{
+    width: 65%;
+    background-color: transparent;
+    border-radius: 19px;
+    padding:10px 22px;
+    font-size: 14px;
+    border: 1px solid var(--hover-color);
+    margin: 2% 0%;
+    margin-right: 3%;
+    outline: none;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 740px) {
+  html {
+    font-size: 11pt;
+  }
+
+  img{
+    width: 100%;
+    height: 350px;
+  }
+
+  .heading{
+    font-weight: 400;
+    font-size: 25pt;
+    color: var(--text-color-1);
+    margin-bottom: 10px;
+}
+  
+  span{
+    color: #000;
+    font-style: italic;
+  }
+  
+  .p1{
+    color: var(--text-color-1);
+    margin-bottom: 20px;
+    font-size: 11pt;
+  
+  }
+
+  .p2{
+    color: var(--text-color-1);
+    font-weight: 500;
+    font-size: 11pt;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  button{
+    border-radius: 60px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border: solid var(--border-color);
+    cursor: pointer;
+    background: transparent;
+  }
+
+  button:hover{
+    transition: 0.5s;
+    transform: scale(1,1.1);
+    border: solid var(--hover-color);
+    color: var(--text-color-1);
+  }
+
+  .section-one{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  aside{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-two{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .btn1{
+    margin-bottom: 4rem;
+  }
+
+
+  input{
+    width: 100%;
+    background-color: transparent;
+    border-radius: 19px;
+    padding:10px 22px;
+    font-size: 14px;
+    border: 1px solid var(--hover-color);
+    margin: 2% 0%;
+    margin-right: 3%;
+    outline: none;
+  }
+
+  .ft-btn{
+    border-radius: 19px;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border: solid var(--border-color);
+    cursor: pointer;
+  }
+
+  .fa-facebook-f{
+    width: 56px;
+    text-align: center;
+  }
+}
+
+/* -------------------------------------------------------- */
+
+
+@media (max-width: 480px) {
+ .container-4, button, input{
+  width: 100%;
+ }
+}
