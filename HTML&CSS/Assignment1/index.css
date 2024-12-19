@@ -1,0 +1,26 @@
+a:link{
+    color: orange;
+  }
+  a:visited{
+    color:green;
+  }
+  a:hover{
+    text-decoration: none;
+    color: #333
+  }
+   p:first-child{
+    color: red;
+    font-size: 150%;
+  }
+  p:last-child{
+    color: #333;
+    font-size: 150%;
+  }
+  tbody
+  {
+    font-size: 24px;
+  }
+  tr:nth-child(even){
+    color: white;
+    background-color: #333;
+  }
